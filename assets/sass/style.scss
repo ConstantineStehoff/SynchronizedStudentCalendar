@@ -2,12 +2,80 @@
 @import "bootstrap/bootstrap";
 @import "bootstrap/responsive";
 
+
+/* Custom responsive semantic grid */
+//////////
+// GRID //
+//////////
+
+// Specify the number of columns and set column and gutter widths
+$columns: 12;
+$column-width: 60;
+$gutter-width: 20;
+
+// Remove the definition below for a pixel-based layout
+$total-width: 100%;
+
+//Responsive grid
+.g-span12{@include column(12);}
+@media (min-width: 980px) {
+  .g-span11{@include column(11);}
+  .g-span10{@include column(10);}
+  .g-span9{@include column(9);}
+  .g-span8{@include column(8);}
+  .g-span7{@include column(7);}
+  .g-span6{@include column(6);}
+  .g-span5{@include column(5);}
+  .g-span4{@include column(4);}
+  .g-span3{@include column(3);}
+  .g-span2{@include column(2);}
+  .g-span1{@include column(1);}
+  .g-offset6{@include push(6);}  
+}
+@media (min-width: 768px) and (max-width: 979px) { 
+  .g-span11{@include column(11);}
+  .g-span10{@include column(10);}
+  .g-span9{@include column(9);}
+  .g-span8{@include column(8);}
+  .g-span7{@include column(7);}
+  .g-span6{@include column(6);}
+  .g-span5{@include column(5);}
+  .g-span4{@include column(4);}
+  .g-span3{@include column(6);}
+  .g-span2{@include column(2);}
+  .g-span1{@include column(1);} 
+  .g-offset6{@include push(6);} 
+}
+// Landscape phone to portrait tablet
+@media (max-width: 767px) { 
+  .g-span11{@include column(12);}
+  .g-span10{@include column(12);}
+  .g-span9{@include column(12);}
+  .g-span8{@include column(12);}
+  .g-span7{@include column(12);}
+  .g-span6{@include column(12);}
+  .g-span4{@include column(12);}
+  .g-span3{@include column(12);}
+  .g-span2{@include column(12);}
+  .g-span1{@include column(12);} 
+}
+/* END Custom responsive semantic grid */
+
+
 /* Bootstrap fixes */
 //Bootstrap fixed navbar fix
-body { 
-	@media (min-width: 979px) {
-		padding-top: 60px; padding-bottom: 40px;
-	}
+//body { 
+//	@media (min-width: 979px) {
+//		padding-top: 60px; padding-bottom: 40px;
+//	}
+//}
+html {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
 }
 /* End Bootstrap fixes */
 
@@ -417,120 +485,10 @@ a .icon-rotate-90:before,a .icon-rotate-180:before,a .icon-rotate-270:before,a .
 .icon-renren:before{content:"\f18b";}
 /* END Font awesome styles */
 
-/* Custom responsive semantic grid */
-//Responsive grid
-.g-span12{@include column(12);}
-@media (min-width: 980px) {
-  .g-span11{@include column(11);}
-  .g-span10{@include column(10);}
-  .g-span9{@include column(9);}
-  .g-span8{@include column(8);}
-  .g-span7{@include column(7);}
-  .g-span6{@include column(6);}
-  .g-span5{@include column(5);}
-  .g-span4{@include column(4);}
-  .g-span3{@include column(3);}
-  .g-span2{@include column(2);}
-  .g-span1{@include column(1);}
-  .g-offset6{@include push(6);}  
-}
-@media (min-width: 768px) and (max-width: 979px) { 
-  .g-span11{@include column(11);}
-  .g-span10{@include column(10);}
-  .g-span9{@include column(9);}
-  .g-span8{@include column(8);}
-  .g-span7{@include column(7);}
-  .g-span6{@include column(6);}
-  .g-span5{@include column(5);}
-  .g-span4{@include column(4);}
-  .g-span3{@include column(6);}
-  .g-span2{@include column(2);}
-  .g-span1{@include column(1);} 
-  .g-offset6{@include push(6);} 
-}
-// Landscape phone to portrait tablet
-@media (max-width: 767px) { 
-  .g-span11{@include column(12);}
-  .g-span10{@include column(12);}
-  .g-span9{@include column(12);}
-  .g-span8{@include column(12);}
-  .g-span7{@include column(12);}
-  .g-span6{@include column(12);}
-  .g-span4{@include column(12);}
-  .g-span3{@include column(12);}
-  .g-span2{@include column(12);}
-  .g-span1{@include column(12);} 
-}
-/* END Custom responsive semantic grid */
-
 body {
   padding-top: 0;
   padding-bottom: 60px;
 }
-
-/* Custom container */
-.container {
-  margin: 0 auto;
-  max-width: 1000px;
-}
-
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        margin: 80px 0;
-        text-align: center;
-      }
-      .jumbotron h1 {
-        font-size: 100px;
-        line-height: 1;
-      }
-      .jumbotron .lead {
-        font-size: 24px;
-        line-height: 1.25;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
-
-      /* Supporting marketing content */
-      .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
-
-
-      /* Customize the navbar links to be fill the entire space of the .navbar */
-      .navbar .navbar-inner {
-        padding: 0;
-      }
-      .navbar .nav {
-        margin: 0;
-        display: table;
-        width: 100%;
-      }
-      .navbar .nav li {
-        display: table-cell;
-        width: 1%;
-        float: none;
-      }
-      .navbar .nav li a {
-        font-weight: bold;
-        text-align: center;
-        border-left: 1px solid rgba(255,255,255,.75);
-        border-right: 1px solid rgba(0,0,0,.1);
-      }
-      .navbar .nav li:first-child a {
-        border-left: 0;
-        border-radius: 3px 0 0 3px;
-      }
-      .navbar .nav li:last-child a {
-        border-right: 0;
-        border-radius: 0 3px 3px 0;
-      }
-
-
 /* Bootstrap overrides */
 .btn{
   background-image: none;
@@ -550,7 +508,11 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 /* END Bootstrap overrides */
 
 /* Other stuff */
-.g-container{@extend .container;}
+.g-container{
+  @extend .container;
+  margin: 0 auto;
+  max-width: 1000px;
+}
 .b-main{@extend .g-container;}
 .g-input{border-width: 2px !important;}
 /* END Other stuff */
@@ -606,16 +568,27 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 .b-signup__main{
   @extend .jumbotron;
+  margin: 80px 0;
+  text-align: center;
+}
+.b-signup__logo{
+  font-size: 100px;
+  line-height: 1;
 }
 .b-signup__lead{
   @extend .lead;
+  font-size: 24px;
+  line-height: 1.25;
 }
 .b-signup__button{
   @extend .btn;
   @extend .btn-large;
+  font-size: 21px;
+  padding: 14px 24px;
   margin-top: 20px;
   background-color: $gold;
   border-color: $gold;
+  text-shadow: none;
 }
 .b-signup__button:hover, .b-signup__button:active, .b-signup__button:focus{
   background-color: $gold;
@@ -643,6 +616,51 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 /* Dashboard block */
 .b-dashboard{@extend .g-span2;}
 /* END Dashboard block */
+
+/*------------ Sign up page ------------- */
+.b-singnup-body{}
+
+.b-signup-form{
+  width: 650px;
+  margin: auto;
+  border: 2px solid black;
+  overflow:hidden;
+}
+.b-signup-form__create-account{
+  @extend .g-span6;
+  //text-align: center;
+  //background-color: green;
+}
+.b-signup-form__social{
+  @extend .g-span6;
+  //background-color: red;
+}
+.b-signup-form__title, .b-signup-form__input-group, .b-signup-form__button{
+  margin-top: 10px; 
+  margin-left: 20px;
+}
+.b-signup-form__title{
+  font-size: 20px;
+}
+.b-signup-form__name, .b-signup-form__email, .b-signup-form__password, .b-signup-form__password-confirm{
+  @extend .g-input;
+}
+.b-signup-form__button{
+  @extend .btn;
+  font-size: 14px;
+  //padding: 14px 24px;
+  margin-top: 20px;
+  background-color: $gold;
+  border-color: $gold;
+  display: block;
+  text-shadow: none;
+}
+.b-signup-form__button:hover, .b-signup-form__button:active, .b-signup-form__button:focus{
+  background-color: $gold;
+  border-color: $gold;
+}
+
+/*---------- END Sign up page ----------- */
 
 /* Footer */
 	footer{@extend .g-span12;}

@@ -51,7 +51,7 @@
 	        <div class="b-signup__main">
 		        <h1 class="b-signup__logo">Logo and name</h1>
 		        <p class="b-signup__lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-		        <a class="b-signup__button" href="#">Sign up today</a>
+		        <a class="b-signup__button" href="sign_up.php">Sign up today</a>
 	    	</div>
       	</div>
 
@@ -60,15 +60,15 @@
 	<div class="b-main">
       <!-- Example row of columns -->
       	<div class="b-features-col">
-          <h2>Heading</h2>
+          <h2>Stay Organized</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
       	</div>
         <div class="b-features-col">
-          <h2>Heading</h2>
+          <h2>Stay Connected</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
        	</div>
         <div class="b-features-col">
-          <h2>Heading</h2>
+          <h2>Stay Ahead</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
         </div>
       
