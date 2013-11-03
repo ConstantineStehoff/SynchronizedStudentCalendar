@@ -34,7 +34,7 @@
 			<form class="b-login-form">
 				<input type="text" class="b-login-form__email" placeholder="Email">
 				<input type="password" class="b-login-form__password" placeholder="Password">
-				<button type="submit" class="b-login-form__button">Sign in</button>
+				<button type="submit" class="b-login-form__button">Log in</button>
 				<div>
 					<label class="b-login-form__rmbr-label">
 	    				<input class="b-login-form__rmbr-input" type="checkbox"> Remember me
