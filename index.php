@@ -25,33 +25,38 @@
 
   <body class="b-body b-body--index">
 	
-	<div class="b-header">
-		<div class="g-container">
+	<div class="b-header b-header--clouds">
+		<div class="g-index-container">
 			
 			<h1 class="b-header__logo">PeerCalendar</h1>
 				
-			<form class="b-login-form">
-				<input type="text" class="b-login-form__email" placeholder="Email">
-				<input type="password" class="b-login-form__password" placeholder="Password">
+			<form class="b-login-form" action="calendar_home.php">
 				<button type="submit" class="b-login-form__button">Log in</button>
-				<div>
-					<label class="b-login-form__rmbr-label">
-	    				<input class="b-login-form__rmbr-input" type="checkbox"> Remember me
-	 				</label>
-	 				<a class="b-login-form__forgot-password">Forgot your password?</a>
-	 			</div>	
-			</form>
-		</div>
+        
+        <div class="b-login-form__input-group">
+          <input type="password" class="b-login-form__password" placeholder="Password">
+          <a class="b-login-form__forgot-password" style="">Forgot your password?</a>
+        </div>
+        
+        <div class="b-login-form__input-group">
+          <input type="text" class="b-login-form__email" placeholder="Email">
+          <label class="b-login-form__rmbr-label">
+            <input class="b-login-form__rmbr-input" type="checkbox">Remember me
+          </label>
+				</div>
+      </form>
+		
+    </div>
 	</div>
 	
   <div class="b-signup">
 		<div class="b-signup__overlay">
       
-      <div class="g-container">		
+      <div class="g-index-container">		
         
         <div class="b-signup__main">
   		    <h1 class="b-signup__logo">PeerCalendar</h1>
-  		      <p class="b-signup__lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+  		      <p class="b-signup__lead">Post assignments due dates, exam dates, or lecture contents and share them with your calssmates.</p>
   		      <a class="b-signup__button" href="sign_up.php">Sign up today</a>
   	    </div>
       
@@ -123,7 +128,8 @@
     
 
     <!--javascript-->
-    <script src="../assets/js/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 
   </body>
 </html>

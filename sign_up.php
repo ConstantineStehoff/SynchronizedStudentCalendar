@@ -23,7 +23,7 @@
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
 
-  <body class="b-body b-body--signup">
+  <body class="b-body b-body--grey">
     <h1 class="b-signup-page-logo">PeerCalendar</h1>
     <div class="b-signup-form">
       
@@ -33,8 +33,11 @@
           
           <form class="b-signup-form__form" action="add_classes.php">
             <div class="b-signup-form__input-group">
-              <input type="text" class="b-signup-form__name" placeholder="Name">
-            </div>  
+              <input type="text" class="b-signup-form__firstname" placeholder="First Name">
+            </div>
+            <div class="b-signup-form__input-group">
+              <input type="text" class="b-signup-form__lastname" placeholder="Last Name">
+            </div>   
             <div class="b-signup-form__input-group">
               <input type="text" class="b-signup-form__email" placeholder="Email">
             </div>
@@ -51,6 +54,10 @@
     
         <div class="b-signup-form__social">
           <h2 class="b-signup-form__title">Or sign up with:</h2>
+          <div class="b-signup-form__input-group">
+            <a href="#" class="b-signup-form__facebook-link"><img class="b-signup-form__facebook-img" src="assets/images/ico/facebook-icon.svg" alt="facebook icon"></a>
+            <a href="#" class="b-signup-form__google-plus-link"><img class="b-signup-form__google-plus-img" src="assets/images/ico/google-plus-icon.svg" alt="google plus icon"></a>
+          </div>  
         </div>
 
       </div>
